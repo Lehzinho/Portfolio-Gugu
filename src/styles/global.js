@@ -8,8 +8,12 @@ export default createGlobalStyle`
 }
 
 body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   overflow-y: scroll;
   -webkit-font-smoothing: antialiased;
+  background-color: #010c15;
 }
 
 body, input, button, textarea{
@@ -25,7 +29,11 @@ p{
 
 a{
   text-decoration: none;
+  color: ${({ theme }) => theme.COLORS.font1};
 }
+a:visited{
+      color: ${({ theme }) => theme.COLORS.font1};
+    }
 
 botton, a{
   cursor: pointer;
