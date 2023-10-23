@@ -1,26 +1,20 @@
 import styled from "styled-components";
-import theme from "../styles/theme";
-export const Container = styled.div`
-  width: 90vw;
-  height: 850px;
 
+export const Container = styled.div`
   display: grid;
   grid-template-areas:
     "header"
     "content"
     "footer";
-  grid-template-rows: 70px auto 70px;
-  grid-template-columns: 100%;
+  grid-template-columns: calc(100vw - 30px);
+  grid-template-rows: 75px auto 55px;
+  height: calc(100vh - 30px);
   align-items: center;
-
-  margin-top: 30px;
-
+  justify-content: center;
+  margin: 0.9375rem;
+  overflow: hidden;
   color: ${({ theme }) => theme.COLORS.font1};
   background-color: ${({ theme }) => theme.COLORS.Background1};
   border: 1px solid ${({ theme }) => theme.COLORS.Lines};
-  border-radius: 8px;
-
-  @media (min-width: 1750px) {
-    width: 1700px;
-  }
+  border-radius: 0.5rem;
 `;

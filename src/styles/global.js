@@ -17,7 +17,7 @@ body {
 }
 
 body, input, button, textarea{
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Fira Code", Arial, Helvetica, sans-serif;
   font-size: 16px;
   outline: none;
 }
