@@ -68,7 +68,4 @@ span{
         text-decoration: underline;
     }
 }
-}
-
-
 `
