@@ -1,0 +1,6 @@
+.alo{
+    display: grid;
+    height: 100vh;
+    grid-template-areas: 'header' 'main' 'footer';
+    grid-template-rows: fit-content auto fit-content;
+}
