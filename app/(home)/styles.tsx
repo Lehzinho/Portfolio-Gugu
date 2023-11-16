@@ -7,7 +7,8 @@ export const Container = styled.section`
     position: relative;
     justify-content: center;
     align-items: center;
-    padding: 0 27px;
+    overflow: hidden;
+    padding: 0 18px;
 
     &::before,
     &::after{

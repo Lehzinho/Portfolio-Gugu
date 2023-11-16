@@ -11,7 +11,7 @@ export default function Home() {
       <p className="find">// find my profile on Github:</p>
       </div>
       <div>
-        <p><span>const </span><span>githubLink </span>= <span>“https://github.com/example/url”</span></p>      </div>
+        <p><span>const </span><span>githubLink </span>= <span>“https://<br className="quebra"/>github.com/example/url”</span></p>      </div>
     </Info>
    </Container>
   )

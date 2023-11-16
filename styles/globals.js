@@ -9,6 +9,7 @@ import {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
+
     }
 
     .container{
@@ -38,7 +39,6 @@ import {
     }
   
     p {
-      font-size: clamp(.75rem, 3vw, 1.125rem);
       line-height: 20px;
       letter-spacing: 0.005em;
     }
