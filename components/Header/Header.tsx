@@ -4,12 +4,18 @@ import { Container, NavLinks } from './styles'
 import Image from 'next/image'
 import Link from 'next/link'
 
+
 export const Header = () => {
-  const [active, setActive] = useState(true)
+  const [active, setActive] = useState(false)
+
+  const handleClose = () => {
+    setActive((prev) => !prev)
+  }
+
   return (
     <Container>
       <p>gustavo-gomes</p>
-      <div onClick={() => setActive((prev) => !prev)}>
+      <div onClick={handleClose}>
         {active ?  
         <Image
         src='/Close.svg'
@@ -20,13 +26,13 @@ export const Header = () => {
       </div>
       {active && 
       <NavLinks className={active? 'active':''}>
-        <Link href={'/'}>_hello</Link>
+        <Link onClick={handleClose} href={'/'}>_hello</Link>
         <div className='separator'/>
-        <Link href={'/'}>_about-me</Link>
+        <Link onClick={handleClose} href={'/about'}>_about-me</Link>
         <div className='separator'/>
-        <Link href={'/'}>_projects</Link>
+        <Link onClick={handleClose} href={'/'}>_projects</Link>
         <div className='separator'/>
-        <Link href={'/'}>_contact-me</Link>
+        <Link onClick={handleClose} href={'/'}>_contact-me</Link>
       </NavLinks>
       }
     </Container>

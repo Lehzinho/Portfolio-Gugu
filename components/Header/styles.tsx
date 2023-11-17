@@ -10,7 +10,9 @@ export const Container = styled.nav`
     border-bottom: 1px solid #2b4057;
     color: #607B96;
     position: relative;
-    
+    p{
+        margin: 0;
+    }
     div{
         display: flex;
         justify-content: center;
@@ -31,7 +33,7 @@ export const NavLinks = styled.nav`
     flex-direction: column;
     position: absolute;
     width: 100%;
-    height: 0px;
+    max-height: 0px;
     overflow: hidden;
     left: 0;
     top: calc(100% + 1px);
@@ -39,7 +41,7 @@ export const NavLinks = styled.nav`
     background-color: #011627;
     border-radius: 0 0 8px 8px ;
     z-index: 2;
-    transition: all 22s ease;
+    transition: max-height .5s ease;
     
     a {
         padding: 18px;
@@ -55,6 +57,6 @@ export const NavLinks = styled.nav`
     }
 
     &.active {
-        height: 230px;
+        max-height: 230px;
     }
 `;
