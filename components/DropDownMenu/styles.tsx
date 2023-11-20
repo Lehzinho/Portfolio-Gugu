@@ -18,7 +18,7 @@ export const Container = styled.nav`
         align-items: center;
         gap: 5px;
     }
-    
+
     `
 
 export const DropDownMenuContent = styled.ul`

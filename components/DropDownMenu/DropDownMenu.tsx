@@ -28,6 +28,7 @@ const DropDownMenu = ({item}: itemProps ) => {
     <Container>
       <p className="firstMenu" onClick={handleClick}>
         <Image src='/Arrowfull.svg'
+        className={active ? "active":''}
         width={30}
         height={20}
         alt="arrow"/>

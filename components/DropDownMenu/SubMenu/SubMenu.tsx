@@ -19,7 +19,7 @@ const SubMenu = ({ item }: SubMenuProps) => {
   return (
     <Container>
       <p onClick={handleClick}>
-        <Image src="/ArrowOUtline.svg" width={8} height={8} alt="arrow" />
+        <Image src="/ArrowOUtline.svg" className={active? "active": ''} width={8} height={8} alt="arrow" />
         <Image src="/Dir.svg" width={10} height={10} alt="arrow" />
         {item.title}
       </p>
